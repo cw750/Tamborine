@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
   <title>Fi Fi's Personal Guide to Tamborine Mountain</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     html, body {
       margin: 0;
       padding: 0;
@@ -17,23 +21,30 @@
 
     .overlay {
       background-color: rgba(0, 0, 0, 0.6);
-      min-height: 100%;
-      padding: 2rem;
-      box-sizing: border-box;
+      min-height: 100vh;
+      width: 100%;
+      padding: 2rem 1rem;
     }
 
     header {
       text-align: center;
-      padding: 2rem 0;
+      padding-bottom: 1rem;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      color: #e0f7fa;
     }
 
     section {
-      margin: 2rem auto;
+      margin: 1.5rem auto;
       max-width: 900px;
     }
 
@@ -41,6 +52,7 @@
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.5rem;
       margin-bottom: 1rem;
+      font-size: 1.4rem;
     }
 
     .gallery {
@@ -51,9 +63,18 @@
     }
 
     .gallery img {
-      width: 300px;
+      width: 100%;
+      max-width: 250px;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
     }
 
     a {
@@ -65,12 +86,13 @@
       text-decoration: underline;
     }
 
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    ul li {
-      margin-bottom: 0.5rem;
+    @media screen and (min-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .quote {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
@@ -78,6 +100,7 @@
   <div class="overlay">
     <header>
       <h1>Fi Fi's Personal Guide to Tamborine Mountain</h1>
+      <div class="quote">“The mountains are calling and I must go...”</div>
     </header>
 
     <section>
