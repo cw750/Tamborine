@@ -59,10 +59,9 @@
     .links a {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      justify-content: space-between;
       border: 2px solid #2e7d32;
       transition: background-color 0.3s, color 0.3s, transform 0.2s;
-      display: block;
       background-color: white;
       border-radius: 12px;
       padding: 1rem;
@@ -70,6 +69,23 @@
       color: #1b5e20;
       font-weight: bold;
       box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .toggle-link .arrow {
+      transition: transform 0.3s ease;
+    }
+    .toggle-link.open .arrow {
+      transform: rotate(90deg);
+    }
+    .collapsible-links {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, padding 0.5s ease;
+      padding-left: 1rem;
+    }
+    .collapsible-links.show {
+      max-height: 200px;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
     }
     .contact-form {
       background-color: rgba(255, 255, 255, 0.95);
@@ -140,11 +156,28 @@
 
     <section>
       <h2>Useful Links</h2>
-      <div class="links"><a href="https://www.dreamworld.com.au/" target="_blank">Dreamworld</a>
-        <a href="#" style="pointer-events:none; font-weight:bold; color:#1b5e20;">Yoga, Pilates & Meditation</a>
-        <a href="https://www.facebook.com/themountainyogastudio/?_rdr" target="_blank">Yoga</a>
-        <a href="https://creativebodyflow.com/" target="_blank">Body Flow</a>
-        <a href="https://thepilatescrowd.com.au/" target="_blank">Pilates</a>
+      <div class="links">
+
+        <!-- Theme Parks Section -->
+        <a href="#" class="toggle-link" onclick="toggleSection(event, 'themeparks-links')">
+          Theme Parks <span class="arrow">&#9654;</span>
+        </a>
+        <div id="themeparks-links" class="collapsible-links">
+          <a href="https://www.dreamworld.com.au/" target="_blank">Dreamworld</a>
+          <a href="https://villageroadshow.com.au/" target="_blank">Village Roadshow</a>
+        </div>
+
+        <!-- Yoga, Pilates & Meditation Section -->
+        <a href="#" class="toggle-link" onclick="toggleSection(event, 'yoga-links')">
+          Yoga, Pilates & Meditation <span class="arrow">&#9654;</span>
+        </a>
+        <div id="yoga-links" class="collapsible-links">
+          <a href="https://www.facebook.com/themountainyogastudio/?_rdr" target="_blank">Yoga</a>
+          <a href="https://creativebodyflow.com/" target="_blank">Body Flow</a>
+          <a href="https://thepilatescrowd.com.au/" target="_blank">Pilates</a>
+        </div>
+
+        <!-- Other Static Links -->
         <a href="https://www.weatherzone.com.au/qld/southeast-coast/mount-tamborine" target="_blank">Current Weather</a>
         <a href="https://www.eldersweather.com.au/climate-history/qld/mount-tamborine" target="_blank">Monthly Weather</a>
         <a href="https://visittamborinemountain.com.au/wp-content/uploads/2022/10/Map-Tamborine-Mountain.pdf" target="_blank">Tamborine Mtn Map</a>
@@ -177,5 +210,16 @@
       <p>"The Mountains are calling and I must go."</p>
     </footer>
   </div>
+
+  <script>
+    function toggleSection(e, id) {
+      e.preventDefault();
+      const content = document.getElementById(id);
+      const link = e.currentTarget;
+
+      content.classList.toggle('show');
+      link.classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
