@@ -22,7 +22,7 @@
       margin: 0;
     }
     header {
-      background-color: rgba(46, 125, 50, 0.9);
+      background-color: rgba(46, 125, 50, 0.5);
       color: white;
       padding: 1rem;
       text-align: center;
@@ -62,13 +62,23 @@
       justify-content: space-between;
       border: 2px solid #2e7d32;
       transition: background-color 0.3s, color 0.3s, transform 0.2s;
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.5);
       border-radius: 12px;
       padding: 1rem;
       text-decoration: none;
       color: #1b5e20;
       font-weight: bold;
       box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .collapsible-links a {
+      background-color: #2e7d32;
+      color: white;
+      padding: 0.75rem 1rem;
+      margin-top: 0.25rem;
+      display: inline-block;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
     }
     .toggle-link .arrow {
       transition: transform 0.3s ease;
@@ -157,8 +167,6 @@
     <section>
       <h2>Useful Links</h2>
       <div class="links">
-
-        <!-- Theme Parks Section -->
         <a href="#" class="toggle-link" onclick="toggleSection(event, 'themeparks-links')">
           Theme Parks <span class="arrow">&#9654;</span>
         </a>
@@ -167,7 +175,6 @@
           <a href="https://villageroadshow.com.au/" target="_blank">Village Roadshow</a>
         </div>
 
-        <!-- Yoga, Pilates & Meditation Section -->
         <a href="#" class="toggle-link" onclick="toggleSection(event, 'yoga-links')">
           Yoga, Pilates & Meditation <span class="arrow">&#9654;</span>
         </a>
@@ -177,7 +184,6 @@
           <a href="https://thepilatescrowd.com.au/" target="_blank">Pilates</a>
         </div>
 
-        <!-- Other Static Links -->
         <a href="https://www.weatherzone.com.au/qld/southeast-coast/mount-tamborine" target="_blank">Current Weather</a>
         <a href="https://www.eldersweather.com.au/climate-history/qld/mount-tamborine" target="_blank">Monthly Weather</a>
         <a href="https://visittamborinemountain.com.au/wp-content/uploads/2022/10/Map-Tamborine-Mountain.pdf" target="_blank">Tamborine Mtn Map</a>
