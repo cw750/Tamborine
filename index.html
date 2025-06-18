@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,13 +63,50 @@
       border: 2px solid #2e7d32;
       transition: background-color 0.3s, color 0.3s, transform 0.2s;
       display: block;
-      background-color: white; border-radius: 12px;
+      background-color: white;
+      border-radius: 12px;
       padding: 1rem;
-      border-radius: 10px;
       text-decoration: none;
       color: #1b5e20;
       font-weight: bold;
       box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .contact-form {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: 2rem auto;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .contact-form h2 {
+      color: #2e7d32;
+    }
+    .contact-form label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      margin-top: 1rem;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .contact-form button:hover {
+      background-color: #1b5e20;
     }
     footer {
       background-color: rgba(224, 224, 224, 0.9);
@@ -88,7 +124,7 @@
 <body>
   <div class="overlay">
     <header>
-      <h1>The Local's Guide to Tamborine Mountain</h1>
+      <h1>Fi's Tamborine Mountain Directory</h1>
     </header>
 
     <section>
@@ -104,16 +140,37 @@
 
     <section>
       <h2>Useful Links</h2>
-      <div class="links">
+      <div class="links"><a href="https://www.dreamworld.com.au/" target="_blank">Dreamworld</a>
+        <a href="#" style="pointer-events:none; font-weight:bold; color:#1b5e20;">Yoga, Pilates & Meditation</a>
+        <a href="https://www.facebook.com/themountainyogastudio/?_rdr" target="_blank">Yoga</a>
+        <a href="https://creativebodyflow.com/" target="_blank">Body Flow</a>
+        <a href="https://thepilatescrowd.com.au/" target="_blank">Pilates</a>
         <a href="https://www.weatherzone.com.au/qld/southeast-coast/mount-tamborine" target="_blank">Current Weather</a>
-        <a href="https://www.eldersweather.com.au/climate-history/qld/mount-tamborine" target="_blank">Monthly Weather History</a>
-        <a href="https://visittamborinemountain.com.au/wp-content/uploads/2022/10/Map-Tamborine-Mountain.pdf" target="_blank">Tamborine Mountain Map</a>
+        <a href="https://www.eldersweather.com.au/climate-history/qld/mount-tamborine" target="_blank">Monthly Weather</a>
+        <a href="https://visittamborinemountain.com.au/wp-content/uploads/2022/10/Map-Tamborine-Mountain.pdf" target="_blank">Tamborine Mtn Map</a>
         <a href="https://visittamborinemountain.com.au/restaurants-cafes-wineries-breweries-and-distilleries-tamborine-mountain/" target="_blank">Places to Eat and Drink</a>
         <a href="https://www.booking.com/region/au/tamborine-mountain.en.html" target="_blank">Places to Stay</a>
-        <a href="https://visittamborinemountain.com.au/explore-national-park-walks-gardens-nurseries-botanic-gardens/" target="_blank">Walks and Gardens</a>
-        <a href="https://tamborinemountainss.eq.edu.au/" target="_blank">Tamborine Mountain State School</a>
+        <a href="https://visittamborinemountain.com.au/explore-national-park-walks-gardens-nurseries-botanic-gardens/" target="_blank">Walks & Gardens</a>
+        <a href="https://tamborinemountainss.eq.edu.au/" target="_blank">State School</a>
         <a href="https://www.realestate.com.au/buy/between-0-1300000-in-tamborine+mountain,+qld+4272/list-1?source=refinement" target="_blank">Real Estate Listings</a>
       </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="https://formsubmit.co/cw750@hotmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://cw750.github.io/Tamborine/thank-you.html">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
     </section>
 
     <footer>
