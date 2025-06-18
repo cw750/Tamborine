@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tamborine Mountain according to Cam</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 0.3rem;
+    }
+    header h2 {
+      margin-top: 0.3rem;
+      font-weight: normal;
+      font-size: 1.5rem;
+      color: #c8e6c9;
+    }
+    section {
+      padding: 2rem;
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    a {
+      color: #2e7d32;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .gallery a {
+      position: relative;
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery a:hover img {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    /* Lightbox effect */
+    .lightbox:target {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+    }
+
+    .lightbox:target::after {
+      content: '✕';
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tamborine Mountain according to Cam</h1>
+    <h2>Welcome to your local guide</h2>
+  </header>
+
+  <section>
+    <h2>Potential New Homes for Fi</h2>
+    <ul>
+      <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147911148" target="_blank">Fi's House 1</a></li>
+      <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147890528" target="_blank">Fi's House 2</a></li>
+      <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147911148" target="_blank">Fi's House 3</a></li>
+    </ul>
+
+    <h2>Weather</h2>
+    <p><a href="https://www.google.com/search?q=tamborine+mountain+weather" target="_blank">Current Weather in Tamborine Mountain</a></p>
+  </section>
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <a href="#img1"><img src="photo1.jpg" alt="Gallery Photo 1"></a>
+      <a href="#img2"><img src="photo2.jpg" alt="Gallery Photo 2"></a>
+      <a href="#img3"><img src="photo3.jpg" alt="Gallery Photo 3"></a>
+    </div>
+
+    <!-- Lightbox modals -->
+    <div id="img1" class="lightbox">
+      <a href="#"><img src="photo1.jpg" alt="Gallery Photo 1 Large"></a>
+    </div>
+    <div id="img2" class="lightbox">
+      <a href="#"><img src="photo2.jpg" alt="Gallery Photo 2 Large"></a>
+    </div>
+    <div id="img3" class="lightbox">
+      <a href="#"><img src="photo3.jpg" alt="Gallery Photo 3 Large"></a>
+    </div>
+  </section>
+</body>
+</html>
