@@ -1,18 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Local's Guide to Tamborine Mountain</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
+      background-image: url('photo6.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       margin: 0;
       padding: 0;
     }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(2px);
+      min-height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
     header {
-      background-color: #2e7d32;
+      background-color: rgba(46, 125, 50, 0.9);
       color: white;
       padding: 1rem;
       text-align: center;
@@ -23,6 +34,9 @@
     }
     section {
       padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 1rem;
+      border-radius: 12px;
     }
     h2 {
       color: #2e7d32;
@@ -56,45 +70,52 @@
       box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     }
     footer {
-      background-color: #e0e0e0;
+      background-color: rgba(224, 224, 224, 0.9);
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
     }
+    footer p {
+      font-size: 2em;
+      font-style: italic;
+      color: #2e7d32;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>The Local's Guide to Tamborine Mountain</h1>
-  </header>
+  <div class="overlay">
+    <header>
+      <h1>The Local's Guide to Tamborine Mountain</h1>
+    </header>
 
-  <section>
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="photo1.jpg" alt="Photo 1">
-      <img src="photo2.jpg" alt="Photo 2">
-      <img src="photo3.jpg" alt="Photo 3">
-      <img src="photo4.jpg" alt="Photo 4">
-      <img src="photo5.jpg" alt="Photo 5">
-          </div>
-  </section>
+    <section>
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="photo1.jpg" alt="Photo 1">
+        <img src="photo2.jpg" alt="Photo 2">
+        <img src="photo3.jpg" alt="Photo 3">
+        <img src="photo4.jpg" alt="Photo 4">
+        <img src="photo5.jpg" alt="Photo 5">
+      </div>
+    </section>
 
-  <section>
-    <h2>Useful Links</h2>
-    <div class="links">
-      <a href="https://www.weatherzone.com.au/qld/southeast-coast/mount-tamborine" target="_blank">Current Weather</a>
-      <a href="https://www.eldersweather.com.au/climate-history/qld/mount-tamborine" target="_blank">Monthly Weather History</a>
-      <a href="https://visittamborinemountain.com.au/wp-content/uploads/2022/10/Map-Tamborine-Mountain.pdf" target="_blank">Tamborine Mountain Map</a>
-      <a href="https://visittamborinemountain.com.au/restaurants-cafes-wineries-breweries-and-distilleries-tamborine-mountain/" target="_blank">Places to Eat and Drink</a>
-      <a href="https://www.booking.com/region/au/tamborine-mountain.en.html" target="_blank">Places to Stay</a>
-      <a href="https://visittamborinemountain.com.au/explore-national-park-walks-gardens-nurseries-botanic-gardens/" target="_blank">Walks and Gardens</a>
-      <a href="https://tamborinemountainss.eq.edu.au/" target="_blank">Tamborine Mountain State School</a>
-      <a href="https://www.realestate.com.au/buy/between-0-1300000-in-tamborine+mountain,+qld+4272/list-1?source=refinement" target="_blank">Real Estate Listings</a>
-    </div>
-  </section>
+    <section>
+      <h2>Useful Links</h2>
+      <div class="links">
+        <a href="https://www.weatherzone.com.au/qld/southeast-coast/mount-tamborine" target="_blank">Current Weather</a>
+        <a href="https://www.eldersweather.com.au/climate-history/qld/mount-tamborine" target="_blank">Monthly Weather History</a>
+        <a href="https://visittamborinemountain.com.au/wp-content/uploads/2022/10/Map-Tamborine-Mountain.pdf" target="_blank">Tamborine Mountain Map</a>
+        <a href="https://visittamborinemountain.com.au/restaurants-cafes-wineries-breweries-and-distilleries-tamborine-mountain/" target="_blank">Places to Eat and Drink</a>
+        <a href="https://www.booking.com/region/au/tamborine-mountain.en.html" target="_blank">Places to Stay</a>
+        <a href="https://visittamborinemountain.com.au/explore-national-park-walks-gardens-nurseries-botanic-gardens/" target="_blank">Walks and Gardens</a>
+        <a href="https://tamborinemountainss.eq.edu.au/" target="_blank">Tamborine Mountain State School</a>
+        <a href="https://www.realestate.com.au/buy/between-0-1300000-in-tamborine+mountain,+qld+4272/list-1?source=refinement" target="_blank">Real Estate Listings</a>
+      </div>
+    </section>
 
-  <footer>
-    <p style="font-size: 2em;">"I learn something every time I go into the mountains"</p>
-  </footer>
+    <footer>
+      <p>"The Mountains are calling and I must go."</p>
+    </footer>
+  </div>
 </body>
 </html>
