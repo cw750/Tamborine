@@ -2,57 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fi Fi's Personal Guide to Tamborine Mountain</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html, body {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      background: url('Photo6.jpg') no-repeat center center fixed;
+      background: url('photo6.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: white;
+      position: relative;
+      color: #fff;
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      min-height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      padding: 2rem 1rem;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
     }
 
     header {
+      background-color: rgba(46, 125, 50, 0.8);
+      padding: 1.5rem;
       text-align: center;
-      padding-bottom: 1rem;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2rem;
-    }
-
-    .quote {
-      font-style: italic;
-      font-size: 1rem;
-      margin-top: 0.5rem;
-      color: #e0f7fa;
+      font-size: 2.5rem;
     }
 
     section {
-      margin: 1.5rem auto;
-      max-width: 900px;
+      margin-bottom: 2rem;
     }
 
     h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
+      color: #c8e6c9;
+      font-size: 1.8rem;
     }
 
     .gallery {
@@ -63,79 +59,83 @@
     }
 
     .gallery img {
-      width: 100%;
-      max-width: 250px;
+      width: 33%;
+      max-width: 300px;
+      height: auto;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
     }
 
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    ul li {
+    .links a {
+      display: block;
       margin-bottom: 0.5rem;
-    }
-
-    a {
-      color: #add8e6;
+      color: #ffe082;
       text-decoration: none;
+      font-size: 1.1rem;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .quote {
+      font-style: italic;
+      margin-top: 1rem;
+      font-size: 1.2rem;
     }
 
-    @media screen and (min-width: 768px) {
-      header h1 {
-        font-size: 2.5rem;
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-style: italic;
+      color: #ffe082;
+    }
+
+    @media (max-width: 768px) {
+      .gallery img {
+        width: 90%;
       }
-      .quote {
-        font-size: 1.2rem;
+
+      header h1 {
+        font-size: 2rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
+  <div class="overlay"></div>
+  <div class="content">
     <header>
       <h1>Fi Fi's Personal Guide to Tamborine Mountain</h1>
-      <div class="quote">“The mountains are calling and I must go...”</div>
     </header>
+
+    <section>
+      <h2>Website</h2>
+      <p class="quote">"The mountains are calling and I must go..."</p>
+    </section>
 
     <section>
       <h2>Gallery</h2>
       <div class="gallery">
-        <img src="photo1.jpg" alt="View 1">
-        <img src="photo2.jpg" alt="View 2">
-        <img src="photo3.jpg" alt="View 3">
-        <img src="photo4.jpg" alt="View 4">
-        <img src="photo5.jpg" alt="View 5">
-        <img src="photo6.jpg" alt="View 6">
+        <img src="photo1.jpg" alt="Photo 1">
+        <img src="photo2.jpg" alt="Photo 2">
+        <img src="photo3.jpg" alt="Photo 3">
+        <img src="photo4.jpg" alt="Photo 4">
+        <img src="photo5.jpg" alt="Photo 5">
+        <img src="photo6.jpg" alt="Photo 6">
       </div>
     </section>
 
-    <section>
-      <h2>Real Estate</h2>
-      <ul>
-        <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147890528">Interesting Option 1</a></li>
-        <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147911148">Interesting Option 2</a></li>
-        <li><a href="https://www.realestate.com.au/buy/between-0-1300000-in-tamborine+mountain,+qld+4272/list-1?source=refinement">All Listings</a></li>
-      </ul>
-    </section>
-
-    <section>
+    <section class="links">
       <h2>Useful Links</h2>
-      <ul>
-        <li><a href="https://visittamborinemountain.com.au/explore-national-park-walks-gardens-nurseries-botanic-gardens/">Walks & Gardens</a></li>
-        <li><a href="https://visittamborinemountain.com.au/restaurants-cafes-wineries-breweries-and-distilleries-tamborine-mountain/">Places to Eat and Drink</a></li>
-        <li><a href="https://www.booking.com/region/au/tamborine-mountain.en.html?aid=377400">Places to Stay</a></li>
-        <li><a href="https://tamborinemountainss.eq.edu.au/">Local School</a></li>
-        <li><a href="https://www.google.com/search?q=tamborine+mountain+weather">Current Weather</a></li>
-        <li><a href="https://www.eldersweather.com.au/climate-history/qld/mount-tamborine">Weather by Season</a></li>
-        <li><a href="https://visittamborinemountain.com.au/wp-content/uploads/2022/10/Map-Tamborine-Mountain.pdf">Tamborine Mountain Map (PDF)</a></li>
-      </ul>
+      <a href="https://www.realestate.com.au/buy/in-tamborine+mountain,+qld+4272/list-1">All Listings</a>
+      <a href="https://visittamborinemountain.com.au/restaurants-cafes-wineries-breweries-and-distilleries-tamborine-mountain/">Places to Eat and Drink</a>
+      <a href="https://visittamborinemountain.com.au/explore-national-park-walks-gardens-nurseries-botanic-gardens/">Walks and Gardens</a>
+      <a href="https://tamborinemountainss.eq.edu.au/">Tamborine Mountain State School</a>
+      <a href="https://www.booking.com/region/au/tamborine-mountain.en.html">Places to Stay</a>
+      <a href="https://www.eldersweather.com.au/climate-history/qld/mount-tamborine">Weather History</a>
+      <a href="https://visittamborinemountain.com.au/wp-content/uploads/2022/10/Map-Tamborine-Mountain.pdf">Map of Tamborine Mountain</a>
     </section>
   </div>
+
+  <footer>
+    “I learn something every time I go into the mountains.”
+  </footer>
 </body>
 </html>
