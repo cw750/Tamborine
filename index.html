@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tamborine Mountain according to Cam</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    section {
+      padding: 2rem;
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 225px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    a.map-link {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      margin-top: 1rem;
+    }
+    a.map-link:hover {
+      background-color: #256025;
+    }
+
+    /* NEW Card Styles */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1rem;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 0.8rem 0 0.5rem;
+      color: #2e7d32;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .card a {
+      background-color: #2e7d32;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .card a:hover {
+      background-color: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tamborine Mountain according to Cam</h1>
+  </header>
+
+  <section>
+    <h2>Potential New Homes for Fi</h2>
+    <ul>
+      <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147911148" target="_blank">Fi's House 1</a></li>
+      <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147890528" target="_blank">Fi's House 2</a></li>
+      <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147911148" target="_blank">Fi's House 3</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Current Weather</h2>
+    <p><a href="https://www.google.com/search?q=tamborine+mountain+weather" target="_blank">Check Tamborine Mountain Weather</a></p>
+  </section>
+
+  <section>
+    <h2>Tamborine Mountain Map</h2>
+    <a
+      href="https://visittamborinemountain.com.au/wp-content/uploads/2022/10/Map-Tamborine-Mountain.pdf"
+      target="_blank"
+      class="map-link"
+    >
+      View &amp; Download Map (PDF)
+    </a>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Photo 1">
+      <img src="photo2.jpg" alt="Photo 2">
+      <img src="photo3.jpg" alt="Photo 3">
+      <img src="photo4.jpg" alt="Photo 4">
+      <img src="photo5.jpg" alt="Photo 5">
+    </div>
+  </section>
+
+  <section>
+    <h2>Places to Stay on Tamborine Mountain</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.iOnL-9JUji8BJjUp7UqxJAHaE8&pid=Api" alt="Cedar Creek Lodges">
+        <h3>Cedar Creek Lodges</h3>
+        <p>Rainforest retreat with glamping tents, spa rooms and self-contained lodges.</p>
+        <a href="https://cedarcreeklodges.com.au/" target="_blank">View Website</a>
+      </div>
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.jwH366KJqXuP8jQuUa5BOAHaE7&pid=Api" alt="Witches Falls Cottages">
+        <h3>Witches Falls Cottages</h3>
+        <p>Private garden cottages with spa baths, fireplaces and breakfast hampers.</p>
+        <a href="https://www.witchesfallscottages.com.au/" target="_blank">View Website</a>
+      </div>
+      <div class="card">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.ZxIh73JG7LvvZD2pfWMRIAHaC1&pid=Api" alt="Avocado Sunset B&B">
+        <h3>Avocado Sunset B&B</h3>
+        <p>Intimate mountain-view B&B with stunning sunsets and warm hospitality.</p>
+        <a href="https://www.avocadosunset.com.au/" target="_blank">View Website</a>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top: 1.5rem;">
+      <a href="https://www.google.com/travel/search?q=places%20to%20stay%20tamborine%20mountain&hl=en-AU&gl=au" target="_blank">
+        👉 See More Places to Stay
+      </a>
+    </p>
+  </section>
+
+</body>
+</html>
