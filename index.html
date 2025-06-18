@@ -5,62 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fi Fi's Personal Guide to Tamborine Mountain</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
-      background: url('photo6.jpg') no-repeat center center fixed;
+      background: url('Photo6.jpg') no-repeat center center fixed;
       background-size: cover;
+      color: white;
     }
+
     .overlay {
       background-color: rgba(0, 0, 0, 0.6);
-      min-height: 100vh;
-      color: white;
+      min-height: 100%;
+      padding: 2rem;
+      box-sizing: border-box;
     }
+
     header {
-      background-color: rgba(46, 125, 50, 0.9);
-      color: white;
-      padding: 1rem;
       text-align: center;
+      padding: 2rem 0;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
+
     section {
-      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 900px;
     }
+
     h2 {
-      color: #c8e6c9;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
     }
+
     .gallery img {
-      width: 337px;
-      height: auto;
+      width: 300px;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.7);
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    ul li a {
-      color: #a5d6a7;
+
+    a {
+      color: #add8e6;
       text-decoration: none;
     }
-    ul li a:hover {
+
+    a:hover {
       text-decoration: underline;
     }
-    p {
-      max-width: 700px;
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
@@ -73,46 +83,33 @@
     <section>
       <h2>Gallery</h2>
       <div class="gallery">
-        <img src="photo1.jpg" alt="Photo 1">
-        <img src="photo2.jpg" alt="Photo 2">
-        <img src="photo3.jpg" alt="Photo 3">
-        <img src="photo4.jpg" alt="Photo 4">
-        <img src="photo5.jpg" alt="Photo 5">
+        <img src="photo1.jpg" alt="View 1">
+        <img src="photo2.jpg" alt="View 2">
+        <img src="photo3.jpg" alt="View 3">
+        <img src="photo4.jpg" alt="View 4">
+        <img src="photo5.jpg" alt="View 5">
       </div>
     </section>
 
     <section>
       <h2>Real Estate</h2>
       <ul>
-        <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147911148" target="_blank">Interesting Option 1</a></li>
-        <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147890528" target="_blank">Interesting Option 2</a></li>
-        <li><a href="https://www.realestate.com.au/buy/between-0-1300000-in-tamborine+mountain,+qld+4272/list-1?source=refinement" target="_blank">All Listings</a></li>
+        <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147890528">Interesting Option 1</a></li>
+        <li><a href="https://www.realestate.com.au/property-house-qld-tamborine+mountain-147911148">Interesting Option 2</a></li>
+        <li><a href="https://www.realestate.com.au/buy/between-0-1300000-in-tamborine+mountain,+qld+4272/list-1?source=refinement">All Listings</a></li>
       </ul>
     </section>
 
     <section>
       <h2>Useful Links</h2>
       <ul>
-        <li><a href="https://www.google.com/search?q=tamborine+mountain+weather" target="_blank">Current Weather – Tamborine Mountain</a></li>
-      </ul>
-
-      <h2>Weather by Season</h2>
-      <p>
-        Curious about what the weather's like year-round? Check out seasonal temperature trends, rainfall, and climate patterns for Mount Tamborine. Perfect if you're planning a visit in summer, autumn, winter, or spring.
-      </p>
-      <ul>
-        <li><a href="https://www.eldersweather.com.au/climate-history/qld/mount-tamborine" target="_blank">
-          Weather by Season – Elders Weather
-        </a></li>
-      </ul>
-
-      <h2>More Links</h2>
-      <ul>
-        <li><a href="https://visittamborinemountain.com.au/explore-national-park-walks-gardens-nurseries-botanic-gardens/" target="_blank">Walks & Gardens</a></li>
-        <li><a href="https://visittamborinemountain.com.au/restaurants-cafes-wineries-breweries-and-distilleries-tamborine-mountain/" target="_blank">Places to Eat & Drink</a></li>
-        <li><a href="https://www.booking.com/region/au/tamborine-mountain.en.html?aid=377400" target="_blank">Places to Stay</a></li>
-        <li><a href="https://visittamborinemountain.com.au/wp-content/uploads/2022/10/Map-Tamborine-Mountain.pdf" target="_blank">Tamborine Mountain Map (PDF)</a></li>
-        <li><a href="https://tamborinemountainss.eq.edu.au/" target="_blank">Tamborine Mountain State School</a></li>
+        <li><a href="https://visittamborinemountain.com.au/explore-national-park-walks-gardens-nurseries-botanic-gardens/">Walks & Gardens</a></li>
+        <li><a href="https://visittamborinemountain.com.au/restaurants-cafes-wineries-breweries-and-distilleries-tamborine-mountain/">Places to Eat and Drink</a></li>
+        <li><a href="https://www.booking.com/region/au/tamborine-mountain.en.html?aid=377400">Places to Stay</a></li>
+        <li><a href="https://tamborinemountainss.eq.edu.au/">Local School</a></li>
+        <li><a href="https://www.google.com/search?q=tamborine+mountain+weather">Current Weather</a></li>
+        <li><a href="https://www.eldersweather.com.au/climate-history/qld/mount-tamborine">Weather by Season</a></li>
+        <li><a href="https://visittamborinemountain.com.au/wp-content/uploads/2022/10/Map-Tamborine-Mountain.pdf">Tamborine Mountain Map (PDF)</a></li>
       </ul>
     </section>
   </div>
