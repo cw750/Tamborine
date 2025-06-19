@@ -81,9 +81,7 @@
       font-size: 1.5rem;
       margin-top: 2rem;
     }
-    .fiona-heading {
-      text-align: center;
-      font-size: 1.8rem;
+    1200rem
       margin-top: 2rem;
       font-weight: bold;
     }
@@ -133,10 +131,10 @@
   </header>
 
   <section>
-    <div class="fiona-heading">Coming Soon: Fiona's Guided Nature Walks</div>
-    <div class="gallery">
-      <img src="photo5.jpg" alt="Photo 5" style="width: 50%; max-width: 125px; height: auto;">
-    </div>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+  <div class="fiona-heading" style="margin: 0; font-size: 1rem;">Coming Soon: Fiona's Guided Nature Walks</div>
+  <img src="photo5.jpg" alt="Photo 5" style="width: 50%; max-width: 125px; height: auto;">
+</div>
     <div class="gallery">
       <img src="photo1.jpg" alt="Photo 1">
       <img src="photo2.jpg" alt="Photo 2">
@@ -148,6 +146,11 @@
     
 
     <div class="sub-container" id="yoga">
+    <div class="sub-container" id="themeparks">
+      <button class="button" onclick="toggleSubButtons('themeparks')">Village Theme Parks</button><br/>
+      <a href="https://www.dreamworld.com.au/" class="sub-button">Dreamworld</a>
+      <a href="https://villageroadshow.com.au/" class="sub-button">Village Roadshow</a>
+    </div>
       <button class="button" onclick="toggleSubButtons('yoga')">Yoga & Pilates</button><br/>
       <a href="https://www.facebook.com/themountainyogastudio/?_rdr" class="sub-button">The Mountain Yoga Studio</a>
       <a href="https://creativebodyflow.com/" class="sub-button">Creative Body Flow</a>
