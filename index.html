@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tamborine Mountain according to Cam</title>
+  <title>The Tamborine Mountain Guide</title>
   <style>
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
     body {
       font-family: Arial, sans-serif;
       background-image: url('photo6.jpg');
@@ -20,7 +26,7 @@
       padding: 2rem;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin: 0;
       opacity: 0.5;
     }
@@ -40,7 +46,8 @@
       margin-bottom: 2rem;
     }
     .gallery img {
-      width: 250px;
+      width: 100%;
+      max-width: 250px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     }
@@ -84,6 +91,7 @@
       background-color: rgba(255,255,255,0.1);
       padding: 1rem;
       border-radius: 10px;
+      width: 90%;
       max-width: 500px;
       margin: 2rem auto;
     }
@@ -121,13 +129,13 @@
 <body>
 
   <header>
-    <h1>Tamborine Mountain according to Cam</h1>
+    <h1>The Tamborine Mountain Guide</h1>
   </header>
 
   <section>
-    <div class="fiona-heading">Introducing Fiona's Guided Nature Walks</div>
+    <div class="fiona-heading">Coming Soon: Fiona's Guided Nature Walks</div>
     <div class="gallery">
-      <img src="photo5.jpg" alt="Photo 5">
+      <img src="photo5.jpg" alt="Photo 5" style="width: 50%; max-width: 125px; height: auto;">
     </div>
     <div class="gallery">
       <img src="photo1.jpg" alt="Photo 1">
@@ -150,9 +158,9 @@
 
     <div class="sub-container" id="massage">
   <button class="button" onclick="toggleSubButtons('massage')">Massage</button><br/>
-  <a href="https://www.studiokrainforestspa.com.au/" class="sub-button" target="_blank">1. Studio K Rainforest Spa – www.studiokrainforestspa.com.au</a>
-  <a href="https://www.getawaydayspa.com.au/" class="sub-button" target="_blank">2. Getaway Day Spa – www.getawaydayspa.com.au</a>
-  <a href="https://mountainmassage.com.au/" class="sub-button" target="_blank">3. Mountain Massage – mountainmassage.com.au</a>
+  <a href="https://www.rainforestspa.com.au//" class="sub-button" target="_blank">1. Rainforest Spa</a>
+  <a href="https://www.getawaydayspa.com.au/" class="sub-button" target="_blank">2. Getaway Day Spa</a>
+  <a href="https://mountainmassage.com.au/" class="sub-button" target="_blank">3. Mountain Massage</a>
 </div>
 
     <div class="sub-container">
@@ -186,4 +194,3 @@
 
 </body>
 </html>
-
